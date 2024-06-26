@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Romain Santin</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed w-full z-10">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <div>
+        <a class="text-gray-800 text-xl font-bold" href="#home">Romain Santin</a>
+      </div>
+      <div class="flex items-center">
+        <a class="text-gray-800 hover:text-gray-600 px-3 py-2" href="#home">Accueil</a>
+        <a class="text-gray-800 hover:text-gray-600 px-3 py-2" href="#about">À propos</a>
+        <a class="text-gray-800 hover:text-gray-600 px-3 py-2" href="#skills">Compétences</a>
+        <a class="text-gray-800 hover:text-gray-600 px-3 py-2" href="#portfolio">Projets</a>
+        <a class="text-gray-800 hover:text-gray-600 px-3 py-2" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="text-center">
+      <h1 class="text-gray-900 text-4xl md:text-6xl font-semibold">Bienvenue, je suis <span class="text-indigo-500">Romain Santin</span></h1>
+      <p class="text-gray-700 mt-4 text-lg md:text-xl">Développeur informatique</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/3">
+          <img src="img/person.jpeg" alt="Romain Santin" class="rounded-full shadow-lg">
+        </div>
+        <div class="w-full md:w-2/3 md:pl-10">
+          <h2 class="text-3xl font-semibold">Romain Santin</h2>
+          <h3 class="text-xl text-indigo-500 mb-4">Développeur informatique</h3>
+          <p class="text-gray-600 mb-4">Actuellement en dernière année de BUT Informatique, je poursuis mes études en alternance, me permettant d'associer théorie et pratique au quotidien.</p>
+          <ul class="mb-4">
+            <li><strong>Lieu :</strong> Montélimar, France</li>
+            <li><strong>Age :</strong> 21</li>
+          </ul>
+          <a href="CV_Romain_SANTIN_Arles.pdf" class="bg-indigo-500 text-white px-4 py-2 rounded shadow hover:bg-indigo-400">Télécharger mon CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">Mes compétences</h2>
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-indigo-500">Programmation</h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>HTML + CSS</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>Ionic</li>
+              <li>React</li>
+              <li>Nuxt</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-indigo-500">Logiciels</h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Microsoft Office</li>
+              <li>Git</li>
+              <li>Docker</li>
+              <li>Visual Studio Code</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/3 px-4 mb-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-4 text-indigo-500">Autres Compétences</h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Gestion de projets</li>
+              <li>SEO</li>
+              <li>Responsive Design</li>
+              <li>API Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="CV_Romain_SANTIN_Arles.pdf" class="bg-indigo-500 text-white px-6 py-3 rounded shadow hover:bg-indigo-400">Voir mon CV complet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">Mes projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+          <a href="img/work-10.jpg" data-fancybox="gallery" data-caption="<h3 class='text-2xl font-semibold mb-2'>Vente de pass</h3><p class='text-gray-600'>Réalisé en HTML/CSS et Javascript</p>">
+            <img src="img/work-10.jpg" alt="Vente de pass" class="w-full h-48 object-cover">
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Vente de pass</h3>
+            <p class="text-gray-600">Réalisé en HTML/CSS et Javascript</p>
+          </div>
+        </div>
+        <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+          <a href="img/work-2.jpg" data-fancybox="gallery" data-caption="<h3 class='text-2xl font-semibold mb-2'>Application mobile</h3><p class='text-gray-600'>Réalisé avec Ionic</p>">
+            <img src="img/work-2.jpg" alt="Application mobile" class="w-full h-48 object-cover">
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Application mobile</h3>
+            <p class="text-gray-600">Réalisé avec Ionic</p>
+          </div>
+        </div>
+        <div class="bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+          <a href="img/work-3.jpg" data-fancybox="gallery" data-caption="<h3 class='text-2xl font-semibold mb-2'>Films à l'affiche</h3><p class='text-gray-600'>Réalisé en Javascript</p>">
+            <img src="img/work-3.jpg" alt="Films à l'affiche" class="w-full h-48 object-cover">
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Films à l'affiche</h3>
+            <p class="text-gray-600">Réalisé en Javascript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">Expérience Professionnelle</h2>
+      <div class="space-y-8">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-semibold">Alternance en Développement PHP</h3>
+            <span class="text-gray-600">Septembre 2023 - Juillet 2024</span>
+          </div>
+          <p class="text-gray-600">OTIPASS</p>
+          <p class="text-gray-600">Mon rôle au sein de l'entreprise OTIPASS consiste à participer au développement de solutions en PHP, contribuant ainsi à l'évolution des services et à la satisfaction de nos clients.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-semibold">Emploi Saisonnier en Développement</h3>
+            <span class="text-gray-600">Juillet 2023 - Août 2023</span>
+          </div>
+          <p class="text-gray-600">Équipe informatique, CPCU</p>
+          <p class="text-gray-600">Cet emploi d'été m'a permis d'approfondir mes compétences en développement et finir les projets commencés, en participant à la conception et à l'implémentation de nouvelles fonctionnalités sur des projets existants.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-semibold">Stage en Développement</h3>
+            <span class="text-gray-600">Mars 2023 - Juin 2023</span>
+          </div>
+          <p class="text-gray-600">Équipe informatique, CPCU</p>
+          <p class="text-gray-600">Durant cette période, j'ai contribué au développement de plusieurs projets internes, en me focalisant sur l'amélioration de l'expérience utilisateur et l'optimisation des performances des applications internes et web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12">Restons en contact</h2>
+      <div class="text-center mb-6">
+        <p class="text-lg text-gray-600">Mail</p>
+        <input type="text" value="stnromain@gmail.com" class="text-center border-0 bg-gray-100 rounded-full py-2 px-4 text-lg text-gray-800 mb-4" disabled>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fancybox Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+</html>
